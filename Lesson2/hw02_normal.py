@@ -66,7 +66,7 @@ for item in sourceLst:
 
 print(targetLst1)
 
-tmp = []
+tmp = [] # list(set(a))
 for item in sourceLst:
     if item not in targetLst2:
         targetLst2.append(item)
@@ -76,5 +76,7 @@ for item in sourceLst:
 for item in tmp:
     if item in targetLst2:
         targetLst2.remove(item)
+		# if a.count(elem)==1
+		# targetLst2.append(elem)
 
 print(targetLst2)

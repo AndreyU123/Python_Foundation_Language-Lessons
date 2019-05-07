@@ -18,7 +18,7 @@ fruits = ["яблоко", "банан", "киви", "арбуз"]
 
 maxLen = 0
 for fruit in fruits:
-    if maxLen < len(fruit):
+    if maxLen < len(fruit): #len(max(fruit))
         maxLen = len(fruit)
 
 symbol = '.'
@@ -34,7 +34,7 @@ for fruit in fruits:
 names1 = ['Ivan', 'Alex', 'Olga', 'Georg']
 names2 = ['Serg', 'Alex', 'Roman', 'Georg']
 
-for name in names1:
+for name in names1.copy():#names1[:]
     if name in names2:
         names1.remove(name)
 

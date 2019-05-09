@@ -26,7 +26,7 @@ def readSalaryFile(pathToFile, maxVisibleSalary):
             if i < 2:
                 i += 1
                 continue
-            nameToSalary = item.rstrip().split("-")
+            nameToSalary = item.rstrip().split("-") 
             salary = int(nameToSalary[1].strip())
             if len(list(filter(lambda x: x <= maxVisibleSalary, [salary]))) == 0:
                 continue

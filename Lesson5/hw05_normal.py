@@ -25,7 +25,8 @@ operations = {
 }
 
 def process_user_choice(choice, foldername):
-    return operations[choice](foldername)
+    if operations.get(choice):
+        return operations[choice](foldername)
 
 
 def start():

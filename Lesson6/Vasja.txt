@@ -1,0 +1,4 @@
+name:Vasja
+health:100
+damage:70
+armor:1.2
